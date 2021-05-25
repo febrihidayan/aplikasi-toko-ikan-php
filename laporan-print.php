@@ -18,9 +18,9 @@
     <?php
 
     require_once __DIR__ . "/config/config.php";
-    
+
     isAuth();
-    
+
     middleware(['admin', 'owner']);
 
     ?>
@@ -67,7 +67,11 @@
 
                 $query = $conn->query($sql);
 
+                $total = 0;
+
                 while ($item = $query->fetch_object()) {
+
+                    $total += $item->total_transaksi_055;
 
                 ?>
                     <tr>
@@ -81,9 +85,20 @@
                         <td><?= dateTime($item->tanggal_transaksi_055); ?></td>
                     </tr>
                 <?php } ?>
+                <tr>
+                    <td colspan="6" class="has-text-right">Jumlah Total</td>
+                    <td colspan="2"><?= money($total); ?></td>
+                </tr>
             </tbody>
         </table>
     </div>
+
+    <div class="is-pulled-right mr-6">
+        <strong>Kampar, <?= date('d F Y'); ?></strong>
+        <p class="py-5"></p>
+        <strong><?= $_SESSION['name'] ?></strong>
+    </div>
+
     <script>
         window.print();
     </script>
