@@ -17,5 +17,5 @@ Gunakan pengguna ini untuk masuk dan berdasarkan peran masing-masing. Gunakan ka
 
 >Catatan: Harus terhubung ke internet agar skrip CDN Bulma dapat dimuat.
 ## Referensi
-- [Aplikasi Toko Buah Dengan PHP](https://github.com/sekolahprogram/aplikasi-toko-buah-dengan-php)
-- [Aplikasi Toko Buah Dengan PHP](https://sekolahprogram.com/kelas/aplikasi-toko-buah-dengan-php)
+- [Aplikasi Toko Buah Dengan PHP (Source Code)](https://github.com/sekolahprogram/aplikasi-toko-buah-dengan-php)
+- [Aplikasi Toko Buah Dengan PHP (Tutorial)](https://sekolahprogram.com/kelas/aplikasi-toko-buah-dengan-php)
